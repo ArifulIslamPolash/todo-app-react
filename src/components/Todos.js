@@ -1,12 +1,14 @@
 import React from 'react'
-
+import Todo from './Todo'
 
 
 const Todos = (props) => {
     console.log(props.items);
   return (
     <section>
-        Todos
+        {props.items.map((item) =>(
+            <Todo item={item} key={item.id} />
+        ))}
     </section>
   )
 }

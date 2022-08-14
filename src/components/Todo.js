@@ -1,9 +1,13 @@
 import React from 'react'
 
 const Todo = (props) => {
+    const {title, desc, id}= props.item;
   return (
     <article>
-        Todo
+        <div>
+            <h3>{title}</h3>
+            <p>{desc}</p>
+        </div>
     </article>
   )
 }
